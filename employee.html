@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #root {
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            gap: 20px;
+        }
+
+        #form {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        table {
+            align-self: start;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        tr {
+            border: 1px solid black;
+        }
+
+        td,
+        th {
+            text-align: center;
+            vertical-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+    <form id="form">
+        <input type="text" placeholder="Employee Name" name="name" required>
+        <input type="email" placeholder="email" name="email" required>
+        <input type="text" placeholder="Employee Id" name="empId" required>
+        <input type="text" placeholder="Compant Name" name="company" required>
+        <select name="designation" required>
+            <option value="fullStack">Full Stack</option>
+            <option value="frontEnd">Front End</option>
+            <option value="backEnd">Back End</option>
+            <option value="manager">Manager</option>
+        </select>
+        <button>Add Employee</button>
+    </form>
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Email</th>
+                <th>Employee Id</th>
+                <th>Company</th>
+                <th>Designation</th>
+                <th>Options</th>
+            </tr>
+
+        </thead>
+    </table>
+    </div>
+
+        <!-- <tbody id="tbody">
+            <tr>
+                <td>mayur</td>
+                <td>mayu@gmail.com</td>
+                <td>ag2</td>
+                <td>accio</td>
+                <td>se</td>
+            </tr>
+        </tbody> -->
+        
+
+
+
+    <script src="./employee.js"></script>
+</body>
+
+</html>
